@@ -1,5 +1,5 @@
 This is a simple react chat application with flexbox page layout. It's completely client-side.
-All the data is fake JSON inside the ChatApp component.
+All the data is JSON, inside the ChatApp component.
 
 - Download/Clone the repository
 
