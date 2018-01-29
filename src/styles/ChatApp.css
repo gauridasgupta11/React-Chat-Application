@@ -1,0 +1,171 @@
+body {
+  display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#nav {
+    flex: 1 0 250px;
+    background: #e6e6e6;
+    text-align: center;
+
+}
+
+#divContent{
+  text-align: center;
+
+}
+
+.nav-header{
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #8c8c8c;
+
+}
+section {
+    flex: 1 1 auto;
+    padding: 20px;
+    width: 1200px;
+    overflow: auto;
+
+}
+
+.userContent{
+  border-top: 30px solid #e6e6e6;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  justify-content: flex-start;
+    cursor:pointer;
+
+
+}
+
+.userContent:hover {
+    background-color: gray;
+}
+
+.offline{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 6px 15px 0px 65px;
+  background: #b30000;
+  border-radius: 50px;
+  height: 12px;
+  width: 12px;
+
+
+}
+
+.online{
+  display: flex;
+  flex-direction: row;
+justify-content: flex-end;
+margin: 6px 15px 0px 65px;
+background: #004d00;
+border-radius: 50px;
+height: 12px;
+width: 12px;
+
+}
+.new-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    margin-left: 0px;
+    border-top: 1px solid #3f3f3f;
+}
+.messages-list {
+    padding: 5px 0 0 5px;
+}
+
+.messages {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-grow: 1;
+  padding: 20px;
+  height:30%;
+}
+
+h3 {
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.chat-input {
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px;
+  flex-shrink: 0;
+
+
+}
+
+.chat-input input[type="text"] {
+  width: 100%;
+  margin-left: -20px;
+  margin-right: -20px;
+
+}
+
+.message.from-user .username {
+  display: none;
+}
+
+.message.from-user {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.message.from-user .message-body {
+  background-color: #b3b3b3;
+  color: black;
+}
+
+
+.message.from-me .username {
+  display: none;
+}
+
+.message.from-me {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.message.from-me .message-body {
+  background-color: #66b3ff;
+  color: black;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+.message-body {
+  max-width: 80%;
+  display: flex;
+  padding: 15px;
+  background-color: #eee;
+  border: 1px;
+  border-radius: 60px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.username {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 5px;
+}
